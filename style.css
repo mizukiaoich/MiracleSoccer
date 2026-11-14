@@ -122,3 +122,9 @@ footer {
   border-top: 1px solid var(--line); color: var(--sub);
   text-align: center; padding: 20px 16px; font-size: 0.85rem;
 }
+
+/* ゲームの特徴：上に画像、下に説明 */
+.features { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.card.feature { display: flex; flex-direction: column; gap: 14px; }
+.card.feature img { width: 100%; max-width: 280px; margin: 0 auto; }
+.card.feature h3 { text-align: center; }
