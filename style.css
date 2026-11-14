@@ -128,3 +128,8 @@ footer {
 .card.feature { display: flex; flex-direction: column; gap: 14px; }
 .card.feature img { width: 100%; max-width: 280px; margin: 0 auto; }
 .card.feature h3 { text-align: center; }
+
+/* カードの上の画像 */
+.card .card-img { width: 100%; max-width: 260px; margin: 0 auto 12px; border-radius: 10px; border: 1px solid var(--line); }
+.card h3 { text-align: center; }
+.shots { margin-top: 12px; }
