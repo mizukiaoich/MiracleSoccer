@@ -137,3 +137,11 @@ footer {
 /* YouTube の埋め込み（16:9） */
 .video { position: relative; width: 100%; max-width: 860px; margin: 0 auto; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: #000; }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* スマホ：トップの画像を切らずに全部見せ、文字は画像の下に置く */
+@media (max-width: 720px) {
+  .hero { display: block; min-height: 0; background: var(--bg); }
+  .hero::before { content: ""; display: block; aspect-ratio: 1983 / 793; background: #000 url("img/title.jpg") center / contain no-repeat; }
+  .hero::after { display: none; }
+  .hero .inner { padding: 20px 16px 8px; }
+}
