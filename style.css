@@ -145,3 +145,14 @@ footer {
   .hero::after { display: none; }
   .hero .inner { padding: 20px 16px 8px; }
 }
+
+/* 攻略：目次 */
+.toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; }
+.toc a { padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-size: 0.9rem; background: var(--panel); }
+.toc a:hover { border-color: var(--gold); }
+section[id] { scroll-margin-top: 70px; }
+.card ul { margin: 8px 0 0; padding-left: 1.2em; }
+
+/* 縦長・横長の画面写真のならび */
+.shots.tall { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.shots.wide { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
