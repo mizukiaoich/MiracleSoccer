@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>攻略｜MiracleSoccer</title>
+<meta name="description" content="MiracleSoccer 攻略：練習與疲勞、成長類型、位置適性、戰術與組織推進、心流・拿手招式・天才覺醒、技能、設施、資金、集訓、邁向世界第一之路。">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="logo" href="index.html">Miracle<span>Soccer</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">遊戲介紹</a></li>
+        <li><a href="howto.html">操作說明</a></li>
+        <li><a class="current" href="guide.html">攻略</a></li>
+      </ul>
+    </nav>
+    <div class="langs"><a href="../guide.html" lang="ja">日本語</a><a href="../en/guide.html" lang="en">English</a><a class="current" href="guide.html" lang="zh-Hant">繁體中文</a></div>
+  </div>
+</header>
+
+<main>
+  <div class="page-title">
+    <h1>攻略</h1>
+    <p>介紹打造強隊所需的遊戲機制與數值。數值為開發中的版本，之後可能變動。</p>
+  </div>
+
+  <nav class="toc" aria-label="目錄">
+    <a href="#basics">球員能力</a>
+    <a href="#training">練習與疲勞</a>
+    <a href="#growth">成長類型</a>
+    <a href="#position">位置適性</a>
+    <a href="#tactics">戰術</a>
+    <a href="#buildup">組織推進</a>
+    <a href="#match">比賽中的關鍵</a>
+    <a href="#skills">技能一覽</a>
+    <a href="#awaken">天才覺醒</a>
+    <a href="#youth">青訓</a>
+    <a href="#facility">設施</a>
+    <a href="#money">資金</a>
+    <a href="#camp">集訓</a>
+    <a href="#transfer">轉會</a>
+    <a href="#road">邁向世界第一</a>
+    <a href="#achievements">成就一覽</a>
+  </nav>
+
+  <section id="basics">
+    <h2>球員能力</h2>
+    <p>球員有6項能力（進攻・防守・速度・力量・耐力・技術）。不同位置重視的能力不同，綜合起來就是「綜合」。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>等級</th><td>S</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td></tr>
+        <tr><th>綜合</th><td>85〜</td><td>75〜</td><td>65〜</td><td>55〜</td><td>45〜</td><td>35〜</td><td>〜34</td></tr>
+      </table>
+    </div>
+    <ul>
+      <li>每項能力都有<b>上限</b>，無法成長超過上限。上限可透過集訓與天才覺醒提高。</li>
+      <li>每擁有1個技能綜合<b>+1</b>，獨特技能<b>+3</b>。</li>
+      <li>其他俱樂部球員的能力，球探調查得越多就越準確。未調查的球員數值會有範圍。</li>
+    </ul>
+  </section>
+
+  <section id="training">
+    <h2>練習與疲勞</h2>
+    <p>每週全隊進行一種練習項目。提升幅度分為「大・中・小」3種，也有會下降的能力。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>項目</th><th>大幅提升</th><th>小幅提升</th><th>小幅下降</th><th>疲勞</th></tr>
+        <tr><td>進攻</td><td>進攻</td><td>耐力（小）</td><td>防守</td><td>+7</td></tr>
+        <tr><td>防守</td><td>防守</td><td>耐力（小）</td><td>進攻</td><td>+7</td></tr>
+        <tr><td>速度</td><td>速度</td><td>耐力（中）</td><td>—</td><td>+9</td></tr>
+        <tr><td>體能</td><td>力量</td><td>耐力（中）</td><td>—</td><td>+10</td></tr>
+        <tr><td>技術</td><td>技術</td><td>進攻・防守（小）</td><td>速度・力量</td><td>+5</td></tr>
+        <tr><td>休養</td><td>—</td><td>—</td><td>—</td><td>−25</td></tr>
+      </table>
+    </div>
+    <h3 style="margin-top:20px">疲勞與狀態的重點</h3>
+    <ul>
+      <li>疲勞為0〜100。越高練習效果越低（最多−10%），比賽表現也會下降（最多−20%）。</li>
+      <li>疲勞每週自然恢復18。<b>個別休息的球員（最多3人）恢復35</b>。</li>
+      <li>出賽90分鐘約累積24疲勞（耐力越高越少）。</li>
+      <li>疲勞超過70仍練習，有30%機率狀態下降。</li>
+      <li>狀態（極差〜絕佳5階段）會讓成長變化−10%〜+10%、比賽戰力變化−6%〜+6%。</li>
+      <li>贏球狀態容易上升（30%），輸球容易下降（25%）。休息容易上升（45%，個別休息65%）。連續3週以上坐板凳可能下降。</li>
+    </ul>
+    <p class="note">出賽也能獲得經驗值（90分鐘30，MVP再+30）。讓年輕球員上場也是培育方法。</p>
+  </section>
+
+  <section id="growth">
+    <h2>成長類型</h2>
+    <p>每位球員都有成長類型，成長與衰退的時期不同。年齡為參考值。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>類型</th><th>開始成長</th><th>巔峰</th><th>開始衰退</th><th>上限修正</th><th>特徵</th></tr>
+        <tr><td>超早熟</td><td>15歲</td><td>20歲〜</td><td>25歲〜</td><td>−2</td><td>年輕時快速成長，也較早衰退</td></tr>
+        <tr><td>早熟</td><td>16歲</td><td>22歲〜</td><td>28歲〜</td><td>−1</td><td>年輕就能成為戰力</td></tr>
+        <tr><td>普通</td><td>17歲</td><td>24歲〜</td><td>30歲〜</td><td>±0</td><td>標準</td></tr>
+        <tr><td>晚成</td><td>18歲</td><td>26歲〜</td><td>31歲〜</td><td>+2</td><td>22歲起成長變快</td></tr>
+        <tr><td>超晚成</td><td>19歲</td><td>28歲〜</td><td>33歲〜</td><td>+4</td><td>24歲起成長變快。最終最容易變得最強</td></tr>
+        <tr><td>持續型</td><td>17歲</td><td>23歲〜</td><td>32歲〜</td><td>±0</td><td>衰退緩慢，能長期活躍</td></tr>
+      </table>
+    </div>
+    <p class="note">晚成・超晚成的年輕球員即使一時沒有成長，也值得留著等待。</p>
+  </section>
+
+  <section id="position">
+    <h2>位置適性</h2>
+    <p>讓球員打非原本的位置，綜合會下降。在戰術畫面中，頭像左上的顏色可以看出（綠＝原本的位置，橙・紅＝不熟悉）。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>擔任的位置</th><th>能力發揮（參考）</th></tr>
+        <tr><td>主位置</td><td>100%</td></tr>
+        <tr><td>副位置</td><td>約93%（門將90%）</td></tr>
+        <tr><td>同系統（後衛・中場・前鋒）的其他位置</td><td>82%</td></tr>
+        <tr><td>不同系統的位置</td><td>65%</td></tr>
+        <tr><td>門將與場上球員互換</td><td>30%</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="tactics">
+    <h2>戰術</h2>
+    <p>戰術共5種。數值是以「標準（平衡）」為1時的倍率。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>戰術</th><th>進攻</th><th>防守</th><th>控球</th><th>反擊</th><th>疲勞</th><th>適合的球隊</th></tr>
+        <tr><td>進攻優先</td><td>1.18</td><td>0.90</td><td>1.00</td><td>1.00</td><td>1.10</td><td>比對手強・需要進球時</td></tr>
+        <tr><td>平衡</td><td>1.00</td><td>1.00</td><td>1.00</td><td>1.00</td><td>1.00</td><td>猶豫時選這個</td></tr>
+        <tr><td>防守優先</td><td>0.82</td><td>1.15</td><td>0.95</td><td>1.10</td><td>0.95</td><td>對上強隊・保住領先</td></tr>
+        <tr><td>反擊</td><td>0.92</td><td>1.06</td><td>0.88</td><td>1.90</td><td>1.05</td><td>擁有速度快的前場</td></tr>
+        <tr><td>控球</td><td>1.02</td><td>1.02</td><td>1.15</td><td>0.70</td><td>0.95</td><td>擁有技術好的中場</td></tr>
+      </table>
+    </div>
+    <ul>
+      <li>主場比賽稍微有利（+4%）。</li>
+      <li>陣型共6種（4-4-2・4-3-3・4-2-3-1・3-5-2・3-4-3・5-3-2）。依球員的位置選擇。</li>
+      <li>設定自動換人後，疲勞・領先・落後時的換人都能交給電腦（換人最多5人，替補5人）。</li>
+      <li>3D比賽可在中場休息時指示戰術・陣型・換人。看上半場的走勢調整吧。</li>
+    </ul>
+  </section>
+
+  <section id="buildup">
+    <h2>組織推進</h2>
+    <p>從後方推進球的方式。可在戰術畫面選擇。「自動」會依陣型決定（4-3-3為偽邊後衛、4-4-2為斜向回撤、5-3-2為運用門將，其餘為列回撤）。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>組織推進</th><th>動作</th><th>優點・缺點</th></tr>
+        <tr><td>列回撤</td><td>後腰退到兩名中後衛之間，三人傳導</td><td>能穩定控球</td></tr>
+        <tr><td>斜向回撤</td><td>後腰退到中後衛旁，邊後衛高位前壓</td><td>傳中增加</td></tr>
+        <tr><td>偽邊後衛</td><td>邊後衛內收到中場，邊鋒拉開</td><td>能在中路控球、直塞球增加，但被搶斷後側翼身後容易被突破</td></tr>
+        <tr><td>運用門將</td><td>門將也上前參與傳球</td><td>抗壓迫強，但被搶斷很危險</td></tr>
+        <tr><td>長傳</td><td>不經串聯直接長傳到前場</td><td>控球少，但打身後的球最多，也不易被反擊</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="match">
+    <h2>比賽中的關鍵</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>心流</h3>
+        <p>6分鐘內連續成功2次（盤帶突破・搶斷・撲救・進球）就會進入「心流」，<b>10分鐘內能力+8</b>。截斷傳球不列入計算。</p>
+      </div>
+      <div class="card">
+        <h3>拿手招式</h3>
+        <p>剪刀腳・馬賽迴旋・克魯伊夫轉身・腳後跟挑球4種。拿手招式在比賽中更常出現，也更容易騙過對手。每人最多2種。</p>
+        <ul>
+          <li>技術50以上的球員進行技術練習時，偶爾會學會新招式（技術60每週約2%，80約3%）。</li>
+          <li>腳後跟挑球需要技術65以上。</li>
+          <li>技術越高的球員，越可能一開始就擁有招式（50約10%，70約50%）。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>王牌對決</h3>
+        <p>王牌是先發進攻位置（ST・CF・WG・OMF・SMF）中，進攻・技術・速度最高的球員。與其相對的防守球員（CB・SB・DMF）是「防守核心」。</p>
+        <p>賽前畫面可以看到對決組合，把能力強的防守球員安排在對方王牌的對面吧。</p>
+      </div>
+      <div class="card">
+        <h3>疲勞與換人</h3>
+        <p>比賽中也會累積疲勞，動作變慢。下半場換下耐力低的球員，或使用擁有「鐵人」「無窮體力」的球員，能防止比賽尾聲失分。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>技能一覽</h2>
+    <p>技能會在比賽場面發揮效果，也會提高綜合（技能+1、獨特技能+3）。「能力參考」是能擁有該技能的球員條件參考。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>技能</th><th>效果</th><th>主要位置</th><th>能力參考</th></tr>
+        <tr><td>進球獵人</td><td>提升球門前的決定力</td><td>CF・ST</td><td>進攻40</td></tr>
+        <tr><td>遠射</td><td>遠距離射門精度提升</td><td>ST・OMF・CMF・WG</td><td>技術40</td></tr>
+        <tr><td>致命傳球</td><td>創造絕佳機會的傳球成功率提升</td><td>OMF・CMF</td><td>技術40</td></tr>
+        <tr><td>盤帶高手</td><td>盤帶突破成功率提升</td><td>WG・OMF・SMF・ST</td><td>技術40</td></tr>
+        <tr><td>飛毛腿</td><td>速度對決更強</td><td>WG・SB・ST・SMF</td><td>速度45</td></tr>
+        <tr><td>鐵壁</td><td>一對一防守變強</td><td>CB</td><td>防守45</td></tr>
+        <tr><td>強硬搶斷</td><td>搶斷成功率提升</td><td>DMF・CB・SB</td><td>防守40</td></tr>
+        <tr><td>空中霸主</td><td>頭球爭頂能力強</td><td>CB・CF</td><td>力量45</td></tr>
+        <tr><td>傳中職人</td><td>傳中精度提升</td><td>SB・SMF・WG</td><td>技術40</td></tr>
+        <tr><td>定位球名手</td><td>擅長自由球與角球</td><td>全位置</td><td>技術50</td></tr>
+        <tr><td>鐵人</td><td>比賽中不易疲勞</td><td>全位置</td><td>耐力50</td></tr>
+        <tr><td>守護神</td><td>擅長撲救射門</td><td>GK</td><td>防守45</td></tr>
+        <tr><td>反應速度</td><td>擅長應對近距離射門</td><td>GK</td><td>速度40</td></tr>
+        <tr><td>搶球獵人</td><td>擅長在中場搶斷</td><td>DMF・CMF</td><td>防守40</td></tr>
+        <tr><td>指揮官</td><td>用傳球組織比賽</td><td>CMF・OMF・DMF</td><td>技術50</td></tr>
+        <tr><td>冷靜沉著</td><td>在絕佳機會時能冷靜射門</td><td>CF・ST・OMF</td><td>技術45</td></tr>
+        <tr><td>補位</td><td>擅長補防隊友身後</td><td>CB・DMF・SB</td><td>防守40</td></tr>
+        <tr><td>插上助攻</td><td>參與進攻製造機會</td><td>SB</td><td>耐力40</td></tr>
+        <tr><td>遠距離界外球</td><td>界外球能直接擲到禁區前</td><td>SB・CB・SMF・DMF</td><td>力量40</td></tr>
+      </table>
+    </div>
+    <h3 style="margin-top:20px">獨特技能（每人1個・綜合+3）</h3>
+    <div class="table-wrap">
+      <table>
+        <tr><th>技能</th><th>效果</th><th>主要位置</th><th>能力參考</th></tr>
+        <tr><td>天才嗅覺</td><td>嗅覺敏銳、百年一遇的射手</td><td>CF・ST</td><td>進攻55</td></tr>
+        <tr><td>魔幻球員</td><td>以誰都預料不到的表現讓觀眾著迷</td><td>OMF・WG・CMF</td><td>技術55</td></tr>
+        <tr><td>不動之壁</td><td>任何進攻球員都過不去</td><td>CB・DMF</td><td>防守55</td></tr>
+        <tr><td>千里眼傳球</td><td>俯瞰全場的寬廣視野</td><td>CMF・OMF</td><td>技術55</td></tr>
+        <tr><td>疾風</td><td>如風般的速度衝上邊路</td><td>WG・SB・SMF</td><td>速度55</td></tr>
+        <tr><td>奇蹟之掌</td><td>連不可能的射門都能擋下</td><td>GK</td><td>防守55</td></tr>
+        <tr><td>無窮體力</td><td>跑滿90分鐘也不會衰退</td><td>全位置</td><td>耐力55</td></tr>
+        <tr><td>鬥將</td><td>鼓舞全隊，提升所有表現的品質</td><td>全位置</td><td>力量55</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="awaken">
+    <h2>天才覺醒</h2>
+    <p>自家俱樂部的球員極少數情況下天賦會覺醒。6項能力的<b>上限各+5〜12</b>，目前能力也<b>+3〜6</b>（每人限1次）。</p>
+    <ul>
+      <li><b>訓練設施</b>等級越高越容易發生（等級1為1倍，等級5為2.6倍）。</li>
+      <li>能力上限<b>越低</b>的球員越容易發生（潛力有限球員的逆轉機會）。</li>
+      <li>在<b>成長期</b>（開始成長到巔峰前）最容易發生（3倍），開始衰退後幾乎不會發生。</li>
+      <li>即使在最容易發生的條件下，一生中也約只有5%。長期培育青訓出身的球員，相遇的機會更大。</li>
+    </ul>
+  </section>
+
+  <section id="youth">
+    <h2>青訓</h2>
+    <ul>
+      <li>候補生為18歲。人數為3人，<b>青訓宿舍</b>每提升1級+1人（最多6人）。</li>
+      <li>青訓回憶（回顧15〜18歲培育的小遊戲）每年1次。<b>青訓宿舍・青訓專用場地各達到等級3以上</b>，次數各增加1次（最多3次）。</li>
+      <li>青訓專用場地也能提升青訓回憶中的成長（每級+5%）。</li>
+    </ul>
+  </section>
+
+  <section id="facility">
+    <h2>設施</h2>
+    <p>強化設施需要工程費與工期（4週，球場8週）。強化後每季的維護費也會提高。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>設施</th><th>效果（每級）</th><th>工程費（Lv2→3→4→5）</th></tr>
+        <tr><td>訓練設施</td><td>培育效率 +3%，也更容易發生天才覺醒</td><td>1,500萬→3,000萬→6,000萬→1.2億</td></tr>
+        <tr><td>體能設施</td><td>速度・力量・耐力成長 +4%</td><td>1,200萬→2,500萬→5,000萬→1億</td></tr>
+        <tr><td>技術設施</td><td>技術・進攻成長 +4%</td><td>1,200萬→2,500萬→5,000萬→1億</td></tr>
+        <tr><td>醫療・狀態設施</td><td>受傷率 −8%・疲勞恢復提升</td><td>1,000萬→2,000萬→4,000萬→8,000萬</td></tr>
+        <tr><td>青訓宿舍</td><td>青訓候補 +1人</td><td>1,000萬→2,000萬→4,000萬→8,000萬</td></tr>
+        <tr><td>青訓專用場地</td><td>青訓成長 +5%（Lv1為800萬）</td><td>1,500萬→3,000萬→6,000萬→1億</td></tr>
+        <tr><td>球探設施</td><td>球探能力 +5%</td><td>800萬→1,600萬→3,200萬→6,400萬</td></tr>
+        <tr><td>球場</td><td>容量 8,000→15,000→25,000→38,000→55,000人</td><td>5,000萬→1.2億→2.5億→5億</td></tr>
+      </table>
+    </div>
+    <p class="note">金額單位為日圓。初期推薦提升培育效率的訓練設施，以及（觀眾坐滿之後）增加收入的球場。</p>
+  </section>
+
+  <section id="money">
+    <h2>資金</h2>
+    <ul>
+      <li>開始時資金為1億2,450萬日圓，球場容量8,000人。</li>
+      <li>收入：贊助費（只能在7月簽約）・門票收入（主場比賽，人氣與球迷越多觀眾越多）・聯賽與大賽獎金。</li>
+      <li>聯賽冠軍獎金：1級聯賽2億、2級1.4億、3級8,000萬日圓。排名越低越少，最後一名為冠軍的2成。</li>
+      <li>人氣：勝利+0.6、平手+0.1、敗戰−0.4。奪冠+4、升級+6。</li>
+      <li>資金低於1,000萬為注意，低於負3,000萬為危機。連續2季虧損會受到懲罰。</li>
+    </ul>
+  </section>
+
+  <section id="camp">
+    <h2>集訓（7月）</h2>
+    <p>全體球員中符合主題的能力<b>上限</b>會提升（每年1次）。結果為「成功」或「大成功」（提升量再+1）。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>集訓地</th><th>費用</th><th>提升量（22〜26歲）</th><th>大成功機率</th></tr>
+        <tr><td>國內集訓</td><td>500萬日圓</td><td>+1</td><td>15%</td></tr>
+        <tr><td>亞洲集訓</td><td>2,000萬日圓</td><td>+2</td><td>20%</td></tr>
+        <tr><td>歐洲集訓</td><td>6,000萬日圓</td><td>+3</td><td>25%</td></tr>
+      </table>
+    </div>
+    <ul>
+      <li>主題：進攻（進攻・技術）、防守（防守・力量）、體能（速度・耐力）。</li>
+      <li>越年輕越容易提升：21歲以下1.5倍、27〜30歲0.6倍、31歲以上0.3倍。年輕的球隊最划算。</li>
+    </ul>
+  </section>
+
+  <section id="transfer">
+    <h2>轉會</h2>
+    <ul>
+      <li>只有夏季（7月第1週〜9月第2週）與冬季（2月第1週〜3月第1週）可以轉會。</li>
+      <li>球員人數需在18〜30人之間。</li>
+      <li>讓球探調查其他俱樂部的球員，就能準確得知能力與技能。沒調查就簽下，可能比想像中弱。</li>
+      <li>人氣越高、所屬聯賽越高的俱樂部，越容易吸引好球員。在亞洲與世界奪冠，評價會更高。</li>
+    </ul>
+  </section>
+
+  <section id="road">
+    <h2>邁向世界第一之路</h2>
+    <ol class="steps">
+      <li><b>從3級聯賽升級。</b>每個聯賽18支俱樂部。前3名升級、後3名降級（勝3分・和1分）。</li>
+      <li><b>在1級聯賽取得前3名，或在國內盃奪冠。</b>就能參加下一季的亞洲大賽（國內共4支俱樂部）。</li>
+      <li><b>在亞洲大賽（7〜8月）奪冠。</b>獎金隨晉級增加，冠軍為8,000萬日圓。</li>
+      <li><b>在世界俱樂部盃（12月）奪冠。</b>16支俱樂部的戰鬥，冠軍獎金2億日圓。成為世界第一即破關（之後也能繼續遊玩）。</li>
+    </ol>
+  </section>
+
+  <section id="achievements">
+    <h2>成就一覽（23）</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>比賽</h3>
+        <ul>
+          <li>首場勝利：首次在正式比賽獲勝</li>
+          <li>5連勝・10連勝：正式比賽連勝</li>
+          <li>進球狂潮：單場攻進5球以上</li>
+          <li>帽子戲法：一名球員單場進3球以上</li>
+          <li>不敗的賽季：聯賽全季不敗</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>俱樂部</h3>
+        <ul>
+          <li>3級冠軍・升上2級・升上1級・1級冠軍</li>
+          <li>國內盃冠軍・亞洲王者・世界第一</li>
+          <li>君臨世界之巔：在世界俱樂部盃奪冠3次</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>表現</h3>
+        <ul>
+          <li>招式進球：用盤帶招式突破後進球</li>
+          <li>腳後跟挑球突破進球</li>
+          <li>心流一擊：心流狀態的球員進球</li>
+          <li>王牌對決勝利：王牌突破防守核心</li>
+          <li>封鎖王牌：擋下對方王牌2次以上，且1次都沒被突破</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>球員・俱樂部</h3>
+        <ul>
+          <li>技術型球員：隊上有擁有2種拿手招式的球員</li>
+          <li>青訓之星：青訓出身的球員在正式比賽進球</li>
+          <li>天才覺醒：球員的天賦覺醒</li>
+          <li>大富豪俱樂部：資金超過10億日圓</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>MiracleSoccer（開發中）　畫面與數值為開發中版本。</p>
+</footer>
+</body>
+</html>

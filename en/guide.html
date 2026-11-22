@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide | MiracleSoccer</title>
+<meta name="description" content="MiracleSoccer guide: training and fatigue, growth types, position suitability, tactics and build-up, the Zone, tricks, talent awakening, skills, facilities, money, camps and the road to world champions.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="logo" href="index.html">Miracle<span>Soccer</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="howto.html">How to play</a></li>
+        <li><a class="current" href="guide.html">Guide</a></li>
+      </ul>
+    </nav>
+    <div class="langs"><a href="../guide.html" lang="ja">日本語</a><a class="current" href="guide.html" lang="en">English</a><a href="../zh/guide.html" lang="zh-Hant">繁體中文</a></div>
+  </div>
+</header>
+
+<main>
+  <div class="page-title">
+    <h1>Guide</h1>
+    <p>The systems and numbers behind building a strong club. Numbers are from the development version and may change.</p>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <a href="#basics">Attributes</a>
+    <a href="#training">Training & fatigue</a>
+    <a href="#growth">Growth types</a>
+    <a href="#position">Position suitability</a>
+    <a href="#tactics">Tactics</a>
+    <a href="#buildup">Build-up</a>
+    <a href="#match">Match factors</a>
+    <a href="#skills">Skills</a>
+    <a href="#awaken">Talent awakening</a>
+    <a href="#youth">Youth</a>
+    <a href="#facility">Facilities</a>
+    <a href="#money">Money</a>
+    <a href="#camp">Camp</a>
+    <a href="#transfer">Transfers</a>
+    <a href="#road">Road to the top</a>
+    <a href="#achievements">Achievements</a>
+  </nav>
+
+  <section id="basics">
+    <h2>Attributes</h2>
+    <p>Players have 6 attributes (Offense, Defense, Speed, Power, Stamina, Technique). Each position weighs them differently; the combined value is "OVR".</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Rank</th><td>S</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td></tr>
+        <tr><th>OVR</th><td>85+</td><td>75+</td><td>65+</td><td>55+</td><td>45+</td><td>35+</td><td>–34</td></tr>
+      </table>
+    </div>
+    <ul>
+      <li>Each attribute has a <b>cap</b> it can't grow beyond. Caps can be raised by camps and talent awakening.</li>
+      <li>Each skill adds <b>+1</b> to OVR; a unique skill adds <b>+3</b>.</li>
+      <li>Other clubs' players' attributes become more accurate the more your scouts check them. Unscouted players show ranges.</li>
+    </ul>
+  </section>
+
+  <section id="training">
+    <h2>Training & fatigue</h2>
+    <p>Each week the whole team does one training menu. Gains come in three sizes (large, medium, small), and some attributes go down.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Menu</th><th>Large gain</th><th>Small gain</th><th>Small loss</th><th>Fatigue</th></tr>
+        <tr><td>Offense</td><td>Offense</td><td>Stamina (small)</td><td>Defense</td><td>+7</td></tr>
+        <tr><td>Defense</td><td>Defense</td><td>Stamina (small)</td><td>Offense</td><td>+7</td></tr>
+        <tr><td>Speed</td><td>Speed</td><td>Stamina (medium)</td><td>—</td><td>+9</td></tr>
+        <tr><td>Physical</td><td>Power</td><td>Stamina (medium)</td><td>—</td><td>+10</td></tr>
+        <tr><td>Technique</td><td>Technique</td><td>Offense, Defense (small)</td><td>Speed, Power</td><td>+5</td></tr>
+        <tr><td>Rest</td><td>—</td><td>—</td><td>—</td><td>−25</td></tr>
+      </table>
+    </div>
+    <h3 style="margin-top:20px">Fatigue and form</h3>
+    <ul>
+      <li>Fatigue goes from 0 to 100. More fatigue lowers training effect (up to −10%) and match performance (up to −20%).</li>
+      <li>Fatigue recovers by 18 every week. <b>Players rested individually (up to 3) recover 35</b>.</li>
+      <li>Playing 90 minutes adds about 24 fatigue (less for high-stamina players).</li>
+      <li>Training with fatigue over 70 has a 30% chance to lower form.</li>
+      <li>Form (5 levels, Terrible to Excellent) changes growth by −10% to +10% and match strength by −6% to +6%.</li>
+      <li>Form tends to rise after a win (30%) and drop after a loss (25%). Rest helps (45%, 65% for individual rest). 3+ weeks on the bench can lower it.</li>
+    </ul>
+    <p class="note">Playing also gives EXP (30 per 90 minutes, +30 for MVP). Giving young players minutes helps them grow.</p>
+  </section>
+
+  <section id="growth">
+    <h2>Growth types</h2>
+    <p>Each player has a growth type that decides when they improve and decline. Ages are approximate.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Type</th><th>Starts growing</th><th>Peak</th><th>Declines from</th><th>Cap modifier</th><th>Notes</th></tr>
+        <tr><td>Very early</td><td>15</td><td>20+</td><td>25+</td><td>−2</td><td>Grows fast while young, declines early</td></tr>
+        <tr><td>Early</td><td>16</td><td>22+</td><td>28+</td><td>−1</td><td>Useful from a young age</td></tr>
+        <tr><td>Normal</td><td>17</td><td>24+</td><td>30+</td><td>±0</td><td>Standard</td></tr>
+        <tr><td>Late</td><td>18</td><td>26+</td><td>31+</td><td>+2</td><td>Growth picks up from 22</td></tr>
+        <tr><td>Very late</td><td>19</td><td>28+</td><td>33+</td><td>+4</td><td>Growth picks up from 24; tends to end up the highest</td></tr>
+        <tr><td>Sustained</td><td>17</td><td>23+</td><td>32+</td><td>±0</td><td>Declines slowly and lasts long</td></tr>
+      </table>
+    </div>
+    <p class="note">Late and very late youngsters are worth keeping even if they don't improve right away.</p>
+  </section>
+
+  <section id="position">
+    <h2>Position suitability</h2>
+    <p>Playing out of position lowers OVR. On the tactics screen, the colour at the top left of the face shows it (green = natural, orange/red = unfamiliar).</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Position played</th><th>Effectiveness (approx.)</th></tr>
+        <tr><td>Main position</td><td>100%</td></tr>
+        <tr><td>Sub position</td><td>about 93% (GK 90%)</td></tr>
+        <tr><td>Another position in the same group (DF / MF / FW)</td><td>82%</td></tr>
+        <tr><td>A position in another group</td><td>65%</td></tr>
+        <tr><td>GK ↔ outfield</td><td>30%</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="tactics">
+    <h2>Tactics</h2>
+    <p>5 tactics. Numbers are multipliers relative to Balanced (= 1).</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Tactic</th><th>Attack</th><th>Defense</th><th>Possession</th><th>Counter</th><th>Fatigue</th><th>Suits</th></tr>
+        <tr><td>Attacking</td><td>1.18</td><td>0.90</td><td>1.00</td><td>1.00</td><td>1.10</td><td>Stronger than the opponent / need a goal</td></tr>
+        <tr><td>Balanced</td><td>1.00</td><td>1.00</td><td>1.00</td><td>1.00</td><td>1.00</td><td>When in doubt</td></tr>
+        <tr><td>Defensive</td><td>0.82</td><td>1.15</td><td>0.95</td><td>1.10</td><td>0.95</td><td>Against stronger teams / protecting a lead</td></tr>
+        <tr><td>Counter</td><td>0.92</td><td>1.06</td><td>0.88</td><td>1.90</td><td>1.05</td><td>Fast forwards</td></tr>
+        <tr><td>Possession</td><td>1.02</td><td>1.02</td><td>1.15</td><td>0.70</td><td>0.95</td><td>Technical midfielders</td></tr>
+      </table>
+    </div>
+    <ul>
+      <li>Home matches give a small advantage (+4%).</li>
+      <li>6 formations (4-4-2, 4-3-3, 4-2-3-1, 3-5-2, 3-4-3, 5-3-2). Choose one that fits your players' positions.</li>
+      <li>Auto subs handle substitutions when tired, leading or behind (up to 5 subs, 5 on the bench).</li>
+      <li>In 3D matches you can change tactics, formation and subs at half-time based on the first half.</li>
+    </ul>
+  </section>
+
+  <section id="buildup">
+    <h2>Build-up</h2>
+    <p>How the ball moves out from the back. Choose it on the tactics screen. "Auto" picks by formation (4-3-3: False SB, 4-4-2: Diagonal drop, 5-3-2: Use the GK, others: Line drop).</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Build-up</th><th>Movement</th><th>Strengths / weaknesses</th></tr>
+        <tr><td>Line drop</td><td>The defensive midfielder drops between the CBs to circulate with three</td><td>Stable possession</td></tr>
+        <tr><td>Diagonal drop</td><td>The defensive midfielder drops beside the CBs; the SBs push high</td><td>More crosses</td></tr>
+        <tr><td>False SB</td><td>The SBs move into midfield; the wingers stay wide</td><td>Central control and more through balls, but the flanks are exposed if you lose it</td></tr>
+        <tr><td>Use the GK</td><td>The GK steps up to join the passing</td><td>Beats the press, but dangerous if you lose it</td></tr>
+        <tr><td>Long ball</td><td>Skip the build-up and kick long to the front</td><td>Little possession, but the most balls in behind and fewer counters against</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="match">
+    <h2>Match factors</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>The Zone</h3>
+        <p>Two successes within 6 minutes (beating a player, winning a tackle, a save or a goal) put a player in "the Zone": <b>+8 to attributes for 10 minutes</b>. Interceptions don't count.</p>
+      </div>
+      <div class="card">
+        <h3>Tricks</h3>
+        <p>Scissors, Marseille roulette, Cruyff turn and heel lift. Signature tricks come out more often and fool defenders more easily. Up to 2 per player.</p>
+        <ul>
+          <li>Players with Technique 50+ doing technique training occasionally learn a new trick (about 2% a week at 60, 3% at 80).</li>
+          <li>The heel lift needs Technique 65.</li>
+          <li>More technical players are more likely to start with a trick (about 10% at 50, 50% at 70).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Ace Duel</h3>
+        <p>The ace is the starting attacker (ST, CF, WG, OMF, SMF) with the best Offense, Technique and Speed. The defender opposite them (CB, SB, DMF) is the "defensive key".</p>
+        <p>The pairing is shown before the match, so put a strong defender opposite the opposing ace.</p>
+      </div>
+      <div class="card">
+        <h3>Fatigue & subs</h3>
+        <p>Fatigue also builds during matches and slows players down. Sub low-stamina players in the second half, or use players with "Iron man" or "Inexhaustible", to avoid late goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Skills take effect in match situations and also raise OVR (skill +1, unique skill +3). The "attribute guide" shows who can have the skill.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Skill</th><th>Effect</th><th>Main positions</th><th>Attribute guide</th></tr>
+        <tr><td>Goal hunter</td><td>Better finishing in front of goal</td><td>CF, ST</td><td>Offense 40</td></tr>
+        <tr><td>Long shot</td><td>Better accuracy from long range</td><td>ST, OMF, CMF, WG</td><td>Technique 40</td></tr>
+        <tr><td>Killer pass</td><td>Better success on chance-creating passes</td><td>OMF, CMF</td><td>Technique 40</td></tr>
+        <tr><td>Dribbler</td><td>Better dribbling success</td><td>WG, OMF, SMF, ST</td><td>Technique 40</td></tr>
+        <tr><td>Fleet-footed</td><td>Stronger in races for the ball</td><td>WG, SB, ST, SMF</td><td>Speed 45</td></tr>
+        <tr><td>Iron wall</td><td>Stronger in 1-on-1 defending</td><td>CB</td><td>Defense 45</td></tr>
+        <tr><td>Hard tackle</td><td>Better tackle success</td><td>DMF, CB, SB</td><td>Defense 40</td></tr>
+        <tr><td>Aerial beast</td><td>Strong in aerial duels</td><td>CB, CF</td><td>Power 45</td></tr>
+        <tr><td>Cross specialist</td><td>Better cross accuracy</td><td>SB, SMF, WG</td><td>Technique 40</td></tr>
+        <tr><td>Set-piece master</td><td>Good at free kicks and corners</td><td>All</td><td>Technique 50</td></tr>
+        <tr><td>Iron man</td><td>Tires less during matches</td><td>All</td><td>Stamina 50</td></tr>
+        <tr><td>Guardian</td><td>Good at stopping shots</td><td>GK</td><td>Defense 45</td></tr>
+        <tr><td>Reflexes</td><td>Strong against close-range shots</td><td>GK</td><td>Speed 40</td></tr>
+        <tr><td>Ball hunter</td><td>Good at winning the ball in midfield</td><td>DMF, CMF</td><td>Defense 40</td></tr>
+        <tr><td>Playmaker</td><td>Builds the game with passing</td><td>CMF, OMF, DMF</td><td>Technique 50</td></tr>
+        <tr><td>Composure</td><td>Shoots calmly in big chances</td><td>CF, ST, OMF</td><td>Technique 45</td></tr>
+        <tr><td>Covering</td><td>Covers the space behind teammates well</td><td>CB, DMF, SB</td><td>Defense 40</td></tr>
+        <tr><td>Overlap</td><td>Creates chances by joining the attack</td><td>SB</td><td>Stamina 40</td></tr>
+        <tr><td>Long throw</td><td>Can throw the ball into the box</td><td>SB, CB, SMF, DMF</td><td>Power 40</td></tr>
+      </table>
+    </div>
+    <h3 style="margin-top:20px">Unique skills (one per player, OVR +3)</h3>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Skill</th><th>Effect</th><th>Main positions</th><th>Attribute guide</th></tr>
+        <tr><td>Genius instinct</td><td>A once-in-a-generation striker with a nose for goal</td><td>CF, ST</td><td>Offense 55</td></tr>
+        <tr><td>Fantasista</td><td>Dazzles the crowd with plays no one expects</td><td>OMF, WG, CMF</td><td>Technique 55</td></tr>
+        <tr><td>Immovable wall</td><td>No attacker gets past</td><td>CB, DMF</td><td>Defense 55</td></tr>
+        <tr><td>Clairvoyant pass</td><td>Vision that sees the whole pitch</td><td>CMF, OMF</td><td>Technique 55</td></tr>
+        <tr><td>Gale</td><td>Races up the flank as fast as the wind</td><td>WG, SB, SMF</td><td>Speed 55</td></tr>
+        <tr><td>Miracle Hands</td><td>Stops even impossible shots</td><td>GK</td><td>Defense 55</td></tr>
+        <tr><td>Inexhaustible</td><td>Never tires, even after 90 minutes</td><td>All</td><td>Stamina 55</td></tr>
+        <tr><td>Fighting captain</td><td>Inspires the team and raises the quality of every play</td><td>All</td><td>Power 55</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="awaken">
+    <h2>Talent awakening</h2>
+    <p>Very rarely, one of your players awakens. <b>Each of the 6 attribute caps rises by +5 to 12</b>, and current attributes by <b>+3 to 6</b> (once per player).</p>
+    <ul>
+      <li>More likely with a higher <b>training facility</b> level (×1 at level 1, ×2.6 at level 5).</li>
+      <li>More likely for players with <b>lower</b> caps (a comeback chance for limited players).</li>
+      <li>Most likely during the <b>growth period</b> (from starting to grow until the peak, ×3); almost never after decline begins.</li>
+      <li>Even in the best conditions it's about 5% over a career. Developing youth graduates for a long time gives you more chances.</li>
+    </ul>
+  </section>
+
+  <section id="youth">
+    <h2>Youth</h2>
+    <ul>
+      <li>Candidates are 18. There are 3, plus 1 per <b>youth dormitory</b> level (up to 6).</li>
+      <li>Youth Recollection (looking back on ages 15–18) is once a year. <b>Youth dormitory and youth training ground at level 3+</b> each add one more (up to 3).</li>
+      <li>The youth training ground also improves growth in recollection (+5% per level).</li>
+    </ul>
+  </section>
+
+  <section id="facility">
+    <h2>Facilities</h2>
+    <p>Upgrades need a construction fee and time (4 weeks; 8 for the stadium). Upkeep per season also rises.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Facility</th><th>Effect (per level)</th><th>Cost (Lv2→3→4→5)</th></tr>
+        <tr><td>Training facility</td><td>Development efficiency +3%; also makes talent awakening more likely</td><td>¥15M→¥30M→¥60M→¥120M</td></tr>
+        <tr><td>Physical facility</td><td>Speed, power, stamina growth +4%</td><td>¥12M→¥25M→¥50M→¥100M</td></tr>
+        <tr><td>Technique facility</td><td>Technique, offense growth +4%</td><td>¥12M→¥25M→¥50M→¥100M</td></tr>
+        <tr><td>Medical & condition facility</td><td>Injury rate −8%, faster fatigue recovery</td><td>¥10M→¥20M→¥40M→¥80M</td></tr>
+        <tr><td>Youth dormitory</td><td>Youth candidates +1</td><td>¥10M→¥20M→¥40M→¥80M</td></tr>
+        <tr><td>Youth training ground</td><td>Youth growth +5% (Lv1 ¥8M)</td><td>¥15M→¥30M→¥60M→¥100M</td></tr>
+        <tr><td>Scout facility</td><td>Scouting +5%</td><td>¥8M→¥16M→¥32M→¥64M</td></tr>
+        <tr><td>Stadium</td><td>Capacity 8,000→15,000→25,000→38,000→55,000</td><td>¥50M→¥120M→¥250M→¥500M</td></tr>
+      </table>
+    </div>
+    <p class="note">Early on, we recommend the training facility (better development) and the stadium (more income, once it's full).</p>
+  </section>
+
+  <section id="money">
+    <h2>Money</h2>
+    <ul>
+      <li>You start with ¥124.5M and an 8,000-seat stadium.</li>
+      <li>Income: sponsors (signed only in July), ticket income (home matches; more popularity and supporters bring more fans) and prize money.</li>
+      <li>League prize for 1st place: ¥200M in Division 1, ¥140M in Division 2, ¥80M in Division 3. It falls with position; last place gets 20% of the winner's.</li>
+      <li>Popularity: +0.6 per win, +0.1 per draw, −0.4 per loss; +4 for a title and +6 for promotion.</li>
+      <li>Below ¥10M is a warning; below −¥30M is a crisis. Two loss-making seasons in a row bring a penalty.</li>
+    </ul>
+  </section>
+
+  <section id="camp">
+    <h2>Camp (July)</h2>
+    <p>Raises the <b>caps</b> of the theme's attributes for all players (once a year). The result is "Success" or "Great success" (+1 more).</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Location</th><th>Cost</th><th>Gain (age 22–26)</th><th>Great success chance</th></tr>
+        <tr><td>Domestic camp</td><td>¥5M</td><td>+1</td><td>15%</td></tr>
+        <tr><td>Asia camp</td><td>¥20M</td><td>+2</td><td>20%</td></tr>
+        <tr><td>Europe camp</td><td>¥60M</td><td>+3</td><td>25%</td></tr>
+      </table>
+    </div>
+    <ul>
+      <li>Themes: Attack (offense, technique), Defense (defense, power), Physical (speed, stamina).</li>
+      <li>Younger players gain more: ×1.5 at 21 and under, ×0.6 at 27–30, ×0.3 at 31+. Young squads benefit most.</li>
+    </ul>
+  </section>
+
+  <section id="transfer">
+    <h2>Transfers</h2>
+    <ul>
+      <li>Transfers are only possible in summer (Jul Wk 1 – Sep Wk 2) and winter (Feb Wk 1 – Mar Wk 1).</li>
+      <li>Squads must have 18–30 players.</li>
+      <li>Having scouts check a player reveals accurate attributes and skills. Sign without scouting and they may be weaker than you hoped.</li>
+      <li>Popular clubs in higher divisions attract better players. Winning in Asia and the world raises your reputation further.</li>
+    </ul>
+  </section>
+
+  <section id="road">
+    <h2>The road to the top</h2>
+    <ol class="steps">
+      <li><b>Get promoted from Division 3.</b> 18 clubs per league; the top 3 go up and the bottom 3 go down (3 points for a win, 1 for a draw).</li>
+      <li><b>Finish in the top 3 of Division 1, or win the domestic cup.</b> You qualify for next season's Asian tournament (4 clubs from your country).</li>
+      <li><b>Win the Asian tournament (July–August).</b> Prize money grows each round; the winner gets ¥80M.</li>
+      <li><b>Win the Club World Cup (December).</b> 16 clubs compete; the winner's prize is ¥200M. World champions clears the game (you can keep playing).</li>
+    </ol>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements (23)</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>Matches</h3>
+        <ul>
+          <li>First win: win your first official match</li>
+          <li>5 / 10 wins in a row: in official matches</li>
+          <li>Goal rush: score 5+ goals in one match</li>
+          <li>Hat-trick: one player scores 3+ in a match</li>
+          <li>Unbeaten season: finish the league without losing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Club</h3>
+        <ul>
+          <li>Division 3 title, To Division 2, To Division 1, Division 1 title</li>
+          <li>Domestic cup winners, Asian champions, World champions</li>
+          <li>Rule the world: win the Club World Cup 3 times</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Play</h3>
+        <ul>
+          <li>Goal from a trick: beat a player with a trick and score</li>
+          <li>Heel lift and score</li>
+          <li>Zone strike: a player in the Zone scores</li>
+          <li>Ace Duel win: your ace beats the defensive key</li>
+          <li>Shut down the ace: stop the opposing ace 2+ times without being beaten</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Players & club</h3>
+        <ul>
+          <li>Technician: a player with 2 tricks</li>
+          <li>Youth star: a youth graduate scores in an official match</li>
+          <li>Talent awakening: a player's talent awakens</li>
+          <li>Wealthy club: funds exceed ¥1B</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>MiracleSoccer (in development)  Screens and numbers are from the development version.</p>
+</footer>
+</body>
+</html>

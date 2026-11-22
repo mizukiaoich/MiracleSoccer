@@ -159,3 +159,9 @@ section[id] { scroll-margin-top: 70px; }
 .card ol { margin: 8px 0 0; padding-left: 1.4em; }
 .card ol li { margin-bottom: 6px; }
 .card h3 + ol, .card h3 + ul { margin-top: 4px; }
+
+/* 言語の切り替え */
+.langs { display: flex; gap: 4px; flex-wrap: wrap; }
+.langs a { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.8rem; color: var(--sub); text-decoration: none; }
+.langs a:hover { border-color: var(--gold); color: var(--text); }
+.langs a.current { border-color: var(--gold); color: var(--gold); }
