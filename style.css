@@ -156,3 +156,6 @@ section[id] { scroll-margin-top: 70px; }
 /* 縦長・横長の画面写真のならび */
 .shots.tall { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 .shots.wide { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.card ol { margin: 8px 0 0; padding-left: 1.4em; }
+.card ol li { margin-bottom: 6px; }
+.card h3 + ol, .card h3 + ul { margin-top: 4px; }
